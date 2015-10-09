@@ -1,0 +1,359 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-09 15:08:09 +0100
+
+ActiveRecord::NoDatabaseError (FATAL:  database "Tucker_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:891:in `rescue in connect'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:881:in `connect'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.2ms)
+  [1m[36m (31.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (20.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateQuotes (20151009140954)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (23.8ms)[0m  [1mCREATE TABLE "quotes" ("id" serial primary key, "text" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151009140954"]]
+  [1m[36m (11.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (13.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mQuote Load (1.6ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'He''s as useless as a marzipan dildo'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (27.0ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.420008"], ["text", "He's as useless as a marzipan dildo"], ["updated_at", "2015-10-09 14:53:42.420008"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.4ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I''ve booked you in for the usual soapy tit wank farewell at No. 10.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.468080"], ["text", "I've booked you in for the usual soapy tit wank farewell at No. 10."], ["updated_at", "2015-10-09 14:53:42.468080"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Fuck off back to your match reports, ya twat!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.470295"], ["text", "Fuck off back to your match reports, ya twat!"], ["updated_at", "2015-10-09 14:53:42.470295"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'How am I supposed to do my job if I don''t know WHAT THE FUCK IS GOING ON?! '  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.472456"], ["text", "How am I supposed to do my job if I don't know WHAT THE FUCK IS GOING ON?! "], ["updated_at", "2015-10-09 14:53:42.472456"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'It is possible to have a good resignation, you know?!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.474883"], ["text", "It is possible to have a good resignation, you know?!"], ["updated_at", "2015-10-09 14:53:42.474883"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'NOMFuP'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.477203"], ["text", "NOMFuP"], ["updated_at", "2015-10-09 14:53:42.477203"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Well, you know me, I''m a man of principle. I like to know whether I''m lying to save the skin of a tosser or a moron.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.479315"], ["text", "Well, you know me, I'm a man of principle. I like to know whether I'm lying to save the skin of a tosser or a moron."], ["updated_at", "2015-10-09 14:53:42.479315"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You''re worse than dead meat. I don''t know what you''re laughing at. You''re too toxic to even feed to the vultures.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.481597"], ["text", "You're worse than dead meat. I don't know what you're laughing at. You're too toxic to even feed to the vultures."], ["updated_at", "2015-10-09 14:53:42.481597"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.3ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'How much fucking shit is there on the menu and WHAT FUCKING FLAVOUR IS IT?!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.483696"], ["text", "How much fucking shit is there on the menu and WHAT FUCKING FLAVOUR IS IT?!"], ["updated_at", "2015-10-09 14:53:42.483696"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You''re sticking one tit moment on top of another tit moment. That wouldn''t happen in real life.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.485728"], ["text", "You're sticking one tit moment on top of another tit moment. That wouldn't happen in real life."], ["updated_at", "2015-10-09 14:53:42.485728"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.3ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'E-mail them FUCKING WADS of information!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.493598"], ["text", "E-mail them FUCKING WADS of information!"], ["updated_at", "2015-10-09 14:53:42.493598"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Come the fuck in or fuck the fuck off.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.495718"], ["text", "Come the fuck in or fuck the fuck off."], ["updated_at", "2015-10-09 14:53:42.495718"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I''m a shape-shifter.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.497807"], ["text", "I'm a shape-shifter."], ["updated_at", "2015-10-09 14:53:42.497807"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Oh, I''m really sorry, you won''t hear anymore swearing from us, YOU MASSIVE GAY SHITE! FUCK OFF!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.499822"], ["text", "Oh, I'm really sorry, you won't hear anymore swearing from us, YOU MASSIVE GAY SHITE! FUCK OFF!"], ["updated_at", "2015-10-09 14:53:42.499822"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Hey, I''m going to have a swear box installed on Monday.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.501815"], ["text", "Hey, I'm going to have a swear box installed on Monday."], ["updated_at", "2015-10-09 14:53:42.501815"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Did you have a nice Poofmas?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.503821"], ["text", "Did you have a nice Poofmas?"], ["updated_at", "2015-10-09 14:53:42.503821"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Have you ever travelled like, a hundred miles per hour, head first, through a tunnel full of pig shit?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.505972"], ["text", "Have you ever travelled like, a hundred miles per hour, head first, through a tunnel full of pig shit?"], ["updated_at", "2015-10-09 14:53:42.505972"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'If he shits I''ll give you 500 quid.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.507960"], ["text", "If he shits I'll give you 500 quid."], ["updated_at", "2015-10-09 14:53:42.507960"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I have never seen anyone sweat so much in my entire life. And I''ve been in a sauna with Pavarotti!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.509914"], ["text", "I have never seen anyone sweat so much in my entire life. And I've been in a sauna with Pavarotti!"], ["updated_at", "2015-10-09 14:53:42.509914"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Fuck all, we''re not doing nothing because I am not the story here!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.512000"], ["text", "Fuck all, we're not doing nothing because I am not the story here!"], ["updated_at", "2015-10-09 14:53:42.512000"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'How dare you. How dare you! Don''t ever, ever call me a bully. I''m so much worse than that.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.513960"], ["text", "How dare you. How dare you! Don't ever, ever call me a bully. I'm so much worse than that."], ["updated_at", "2015-10-09 14:53:42.513960"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You were like a sweaty octopus trying to unhook a bra!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.515909"], ["text", "You were like a sweaty octopus trying to unhook a bra!"], ["updated_at", "2015-10-09 14:53:42.515909"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'There is a glacier of shit at DoSaC! I need you over there with a fucking blowtorch, right now!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.517947"], ["text", "There is a glacier of shit at DoSaC! I need you over there with a fucking blowtorch, right now!"], ["updated_at", "2015-10-09 14:53:42.517947"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Shut it! You''re using all the minutes on my "Talk until you get head cancer" tariff.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.519900"], ["text", "Shut it! You're using all the minutes on my \"Talk until you get head cancer\" tariff."], ["updated_at", "2015-10-09 14:53:42.519900"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Well half an hour ago you were in with a shot! This is half an hour hence! We''ve fucking time-travelled, yes?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.521939"], ["text", "Well half an hour ago you were in with a shot! This is half an hour hence! We've fucking time-travelled, yes?"], ["updated_at", "2015-10-09 14:53:42.521939"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Tomorrow, from broadsheets to wank rags, I want pages one, two and three to be a profile of Tom looking like a fucking political colossus. Y''know: Tom meeting the Pope, Tom in an NHS hospital chatting to little, baldie kiddies.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.523936"], ["text", "Tomorrow, from broadsheets to wank rags, I want pages one, two and three to be a profile of Tom looking like a fucking political colossus. Y'know: Tom meeting the Pope, Tom in an NHS hospital chatting to little, baldie kiddies."], ["updated_at", "2015-10-09 14:53:42.523936"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'And I want page six TO BE FUCKING... ISRAEL OR SOME BULLSHIT, NOT A FUCKING DOSAC, DIPSHIT, LEGACY-DESTRACTING COCK-UP!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.526008"], ["text", "And I want page six TO BE FUCKING... ISRAEL OR SOME BULLSHIT, NOT A FUCKING DOSAC, DIPSHIT, LEGACY-DESTRACTING COCK-UP!"], ["updated_at", "2015-10-09 14:53:42.526008"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Have some fucking chow mein!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.527974"], ["text", "Have some fucking chow mein!"], ["updated_at", "2015-10-09 14:53:42.527974"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I mean the guy is an epic fuck-up. He’s so dense that light bends around him.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.529911"], ["text", "I mean the guy is an epic fuck-up. He’s so dense that light bends around him."], ["updated_at", "2015-10-09 14:53:42.529911"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.4ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I''ve got more on my plate than a spinster at a wedding. That wasn''t a reference to your daughter by the way, Andrew.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.538624"], ["text", "I've got more on my plate than a spinster at a wedding. That wasn't a reference to your daughter by the way, Andrew."], ["updated_at", "2015-10-09 14:53:42.538624"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.3ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Get me Nicola Murray. Yeah, if she says no the only other candidate is my left bollock with a fucking smiley face drawn on it.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.547022"], ["text", "Get me Nicola Murray. Yeah, if she says no the only other candidate is my left bollock with a fucking smiley face drawn on it."], ["updated_at", "2015-10-09 14:53:42.547022"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.4ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'A fucking normal chair, right. Not a fucking massive vibrating throne.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.555648"], ["text", "A fucking normal chair, right. Not a fucking massive vibrating throne."], ["updated_at", "2015-10-09 14:53:42.555648"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'What''s up with you? You look like you''ve shat a Lego garage.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.557755"], ["text", "What's up with you? You look like you've shat a Lego garage."], ["updated_at", "2015-10-09 14:53:42.557755"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Pull in here. See if you can take out that cyclist on the way, I think he''s Shadow Cabinet.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.559728"], ["text", "Pull in here. See if you can take out that cyclist on the way, I think he's Shadow Cabinet."], ["updated_at", "2015-10-09 14:53:42.559728"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'AM I GONNA HAVE TO RUN AROUND SLAPPING BADGES ON PEOPLE WITH A BIG TICK ON SOME AND A BIG CROSS ON OTHERS, SO YOU KNOW WHEN TO SHUT YOUR GOB AND WHEN TO OPEN IT?!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.561663"], ["text", "AM I GONNA HAVE TO RUN AROUND SLAPPING BADGES ON PEOPLE WITH A BIG TICK ON SOME AND A BIG CROSS ON OTHERS, SO YOU KNOW WHEN TO SHUT YOUR GOB AND WHEN TO OPEN IT?!"], ["updated_at", "2015-10-09 14:53:42.561663"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You''ve sent fuckin'' Ollie over there to deal with it. FUCKIN'' OLLIE! HE''S A FUCKIN'', HE''S A FUCKIN'' KNITTED SCARF, THAT TWAT! HE''S A FUCKIN'' BALACLAVA!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.563724"], ["text", "You've sent fuckin' Ollie over there to deal with it. FUCKIN' OLLIE! HE'S A FUCKIN', HE'S A FUCKIN' KNITTED SCARF, THAT TWAT! HE'S A FUCKIN' BALACLAVA!"], ["updated_at", "2015-10-09 14:53:42.563724"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I''m likely to use an awful lot of what we would call "Violent Sexual Imagery"'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.565688"], ["text", "I'm likely to use an awful lot of what we would call \"Violent Sexual Imagery\""], ["updated_at", "2015-10-09 14:53:42.565688"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'E-fucking-nough.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.567828"], ["text", "E-fucking-nough."], ["updated_at", "2015-10-09 14:53:42.567828"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Today, you have laid your first, big, fat egg of solid fuck.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.569766"], ["text", "Today, you have laid your first, big, fat egg of solid fuck."], ["updated_at", "2015-10-09 14:53:42.569766"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You took the data loss media strategy and you ate with a lump of E. coli. And then you sprayed it our of your arse at 300mph.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.571722"], ["text", "You took the data loss media strategy and you ate with a lump of E. coli. And then you sprayed it our of your arse at 300mph."], ["updated_at", "2015-10-09 14:53:42.571722"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I think we should use the ''carrot and stick'' approach. You take a carrot, you stick it up his fucking arse, followed by the stick, followed by an even bigger, rougher carrot.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.573798"], ["text", "I think we should use the 'carrot and stick' approach. You take a carrot, you stick it up his fucking arse, followed by the stick, followed by an even bigger, rougher carrot."], ["updated_at", "2015-10-09 14:53:42.573798"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I had my finger in the dyke but the dyke''s very squirty.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.575765"], ["text", "I had my finger in the dyke but the dyke's very squirty."], ["updated_at", "2015-10-09 14:53:42.575765"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Oi, twat-features! I mean that, literally.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.577809"], ["text", "Oi, twat-features! I mean that, literally."], ["updated_at", "2015-10-09 14:53:42.577809"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'When the Opposition are here, you tell them nothing except where the toilets are, but you lie about that.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.579709"], ["text", "When the Opposition are here, you tell them nothing except where the toilets are, but you lie about that."], ["updated_at", "2015-10-09 14:53:42.579709"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I will tear your fucking skin off, I will wear it to your mother''s birthday party.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.581747"], ["text", "I will tear your fucking skin off, I will wear it to your mother's birthday party."], ["updated_at", "2015-10-09 14:53:42.581747"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I didn''t know you were still alive. How''s the 80''s tribute band?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.583719"], ["text", "I didn't know you were still alive. How's the 80's tribute band?"], ["updated_at", "2015-10-09 14:53:42.583719"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'This is Tom''s idea of a joke, and he wonders why we don''t let him out in public.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.585686"], ["text", "This is Tom's idea of a joke, and he wonders why we don't let him out in public."], ["updated_at", "2015-10-09 14:53:42.585686"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Are you producing porn for the visually impaired?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.587721"], ["text", "Are you producing porn for the visually impaired?"], ["updated_at", "2015-10-09 14:53:42.587721"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I''m telling you to fucking stand up you sack of fucking cum, stand the fuck up!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.589589"], ["text", "I'm telling you to fucking stand up you sack of fucking cum, stand the fuck up!"], ["updated_at", "2015-10-09 14:53:42.589589"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'See, you? Get me a fucking Curly Wurly, right?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.591594"], ["text", "See, you? Get me a fucking Curly Wurly, right?"], ["updated_at", "2015-10-09 14:53:42.591594"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'This is like The Shawshank Redemption, only with more tunneling through shit and no fucking redemption.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.593570"], ["text", "This is like The Shawshank Redemption, only with more tunneling through shit and no fucking redemption."], ["updated_at", "2015-10-09 14:53:42.593570"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'There is a huge difference between me saying "Nicola, I''d like to go for a lovely walk with you" and "Nicola, I''m going to make a hat out of your fucking entrails."'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.595663"], ["text", "There is a huge difference between me saying \"Nicola, I'd like to go for a lovely walk with you\" and \"Nicola, I'm going to make a hat out of your fucking entrails.\""], ["updated_at", "2015-10-09 14:53:42.595663"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I went golfing with Stephen Hawking, he''s fucking shit. He lied about his handicap.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.597636"], ["text", "I went golfing with Stephen Hawking, he's fucking shit. He lied about his handicap."], ["updated_at", "2015-10-09 14:53:42.597636"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Sam, prepare my horse. I ride to DoSAC!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.599599"], ["text", "Sam, prepare my horse. I ride to DoSAC!"], ["updated_at", "2015-10-09 14:53:42.599599"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Steve, listen, could you eat or fuck whatever''s at the door, on your fucking way out please?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.601491"], ["text", "Steve, listen, could you eat or fuck whatever's at the door, on your fucking way out please?"], ["updated_at", "2015-10-09 14:53:42.601491"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I''d rather fuck a real dragon.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.603541"], ["text", "I'd rather fuck a real dragon."], ["updated_at", "2015-10-09 14:53:42.603541"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Sam, no pissy biscuits.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.605528"], ["text", "Sam, no pissy biscuits."], ["updated_at", "2015-10-09 14:53:42.605528"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Quiet Batpeople?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.607496"], ["text", "Quiet Batpeople?"], ["updated_at", "2015-10-09 14:53:42.607496"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Don’t send Ben to the back-benches, he’ll just wank and eat Pringles.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.609432"], ["text", "Don’t send Ben to the back-benches, he’ll just wank and eat Pringles."], ["updated_at", "2015-10-09 14:53:42.609432"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'What the fuck is this? Tinker, Tailor, Soldier, Cunt?'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.611525"], ["text", "What the fuck is this? Tinker, Tailor, Soldier, Cunt?"], ["updated_at", "2015-10-09 14:53:42.611525"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'It''s not a pony! It''s a fucking foal.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.613459"], ["text", "It's not a pony! It's a fucking foal."], ["updated_at", "2015-10-09 14:53:42.613459"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Sorry you had to go, but let''s face it, you are a fucking waste of skin.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.615502"], ["text", "Sorry you had to go, but let's face it, you are a fucking waste of skin."], ["updated_at", "2015-10-09 14:53:42.615502"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.3ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Here he is! The anointed one.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.617571"], ["text", "Here he is! The anointed one."], ["updated_at", "2015-10-09 14:53:42.617571"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Political fucking mist, no substance, no weight. '  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.619606"], ["text", "Political fucking mist, no substance, no weight. "], ["updated_at", "2015-10-09 14:53:42.619606"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'When this inquiry lands, you better have developed a very flat stony face with no expression.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.623276"], ["text", "When this inquiry lands, you better have developed a very flat stony face with no expression."], ["updated_at", "2015-10-09 14:53:42.623276"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Well, it''s just, you know, you keep asking me the same questions, I can''t really help it if you don''t like the answers.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.625402"], ["text", "Well, it's just, you know, you keep asking me the same questions, I can't really help it if you don't like the answers."], ["updated_at", "2015-10-09 14:53:42.625402"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You don''t get to where you are without bending the rules. That''s the way it is.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.627488"], ["text", "You don't get to where you are without bending the rules. That's the way it is."], ["updated_at", "2015-10-09 14:53:42.627488"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'Je ne remember rien.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.629469"], ["text", "Je ne remember rien."], ["updated_at", "2015-10-09 14:53:42.629469"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You know Jackie fucking Chan about me.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.631403"], ["text", "You know Jackie fucking Chan about me."], ["updated_at", "2015-10-09 14:53:42.631403"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'I''m as dead as fucking Two-Tone. But I can fashion my own exit.'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.633607"], ["text", "I'm as dead as fucking Two-Tone. But I can fashion my own exit."], ["updated_at", "2015-10-09 14:53:42.633607"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT  "quotes".* FROM "quotes"  WHERE "quotes"."text" = 'You ever drive off like that again and I''ll stick your meter so far down your throat you''ll be able to tell the price of your next shit!'  ORDER BY "quotes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "quotes" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-10-09 14:53:42.635704"], ["text", "You ever drive off like that again and I'll stick your meter so far down your throat you'll be able to tell the price of your next shit!"], ["updated_at", "2015-10-09 14:53:42.635704"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mQuote Load (1.9ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  [1m[35mQuote Load (0.9ms)[0m  SELECT "quotes".* FROM "quotes"
+  [1m[36mQuote Load (0.7ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
