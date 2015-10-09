@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 
 gem "less-rails"
 gem 'twitter-bootstrap-rails'
+gem "tweet-button"

@@ -1,12 +1,11 @@
-<%- model_class = Quote -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+<div class="page-header text-center">
+  <h1><%= @quote.text %></h1>
+  <%= tweet_button url: quote_url(@quote.token), text: "And speaking of rabies injections... #TuckerMe", via: nil %>
+</div>
+<div class="page-body text-center">
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:text) %>:</strong></dt>
-  <dd><%= @quote.text %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:token) %>:</strong></dt>
-  <dd><%= @quote.token %></dd>
-</dl>
+<div class="page-footer text-center">
+  <%= link_to "Get me another one, and no pissy biscuits!", hit_me_quotes_path, class: "btn btn-info btn-lg" %>
+</div>
 

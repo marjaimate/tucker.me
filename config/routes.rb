@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :quotes, only: [:index, :show]
+  resources :quotes, only: [:index, :show] do
+    get :hit_me, on: :collection
+  end
   root "quotes#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
