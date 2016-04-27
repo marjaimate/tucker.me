@@ -2,13 +2,12 @@
 <html>
 <head>
   <title>Malcolm Tucker Magic 8-ball</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<%= yield %>
+<%= content %>
 
 <p style="position: absolute;bottom: 0;">
   This is a site created to draw some smiles on people's faces. Not intended to cause harm of any kind. All quotes are based on <a href="http://en.wikiquote.org/wiki/The_Thick_of_It">The Thick of IT</a>
